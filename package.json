@@ -1,0 +1,16 @@
+{
+  "name": "dimcar",
+  "version": "1.0.0",
+  "description": "DimCar - Discover the Future of Mobility",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx live-server ."
+  },
+  "keywords": [],
+  "author": "Dimas",
+  "license": "MIT",
+  "type": "commonjs",
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  }
+}

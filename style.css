@@ -1,0 +1,109 @@
+/* Reset default */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-image: url('Bundaran.jpg');
+    background-size: cover; /* Menyesuaikan ukuran background agar menutupi seluruh area */
+    background-position: center; /* Memposisikan background di tengah */
+    background-repeat: no-repeat; /* Mencegah pengulangan background */
+}
+
+/* Header Styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 40px;
+    background: rgba(34, 34, 34, 0.3); /* Warna hitam lebih transparan */
+    backdrop-filter: blur(10px); /* Blur efek untuk transparansi */
+    color: white;
+    z-index: 1000;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Logo */
+.header-logo {
+    display: flex;
+    align-items: center;
+}
+
+.header-logo img {
+    height: 40px; /* Sesuaikan ukuran logo */
+    margin-right: 10px;
+}
+
+/* Navigation */
+.header-nav {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.header-nav li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    transition: color 0.3s ease-in-out;
+    padding: 8px 12px;
+}
+
+.header-nav li a:hover {
+    color: #00FF99;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+}
+
+/* Hero Section (Untuk melihat efek transparan) */
+.hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    color: white;
+    font-size: 32px;
+}
+
+.image-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.image-1 img {
+    width: 100%;
+    max-width: 600px; /* Atur lebar maksimum gambar */
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.image-1 img:hover {
+    transform: scale(1.1);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 10px 20px;
+    }
+
+    .header-nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+}
